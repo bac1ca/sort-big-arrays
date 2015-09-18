@@ -1,0 +1,36 @@
+version = '1.0'
+String APP_JAR = "sort.jar"
+
+apply plugin: 'java'
+defaultTasks 'clean', 'buildAll'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src/test/sort/'
+        }
+    }
+    test {
+        java {
+            srcDir 'tests/test/sort/'
+        }
+    }
+}
+
+task buildAll(type: Jar) {
+    from sourceSets.main.output
+    classifier = "main"
+    archiveName = APP_JAR
+    manifest {
+        attributes "Main-Class" : "test.sort.Main",
+                   "Implementation-Version" : "${version}"
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+

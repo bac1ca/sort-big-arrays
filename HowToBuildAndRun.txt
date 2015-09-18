@@ -1,0 +1,2 @@
+1. build: ./gradlew
+2. run java -jar build/lib/sort.jar <threads number> <input file> <output file> [chunk size in Kb]
