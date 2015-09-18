@@ -1,0 +1,39 @@
+---------------------------------
+10Kb, chunk (byte): 128 
+---------------------------------
+size (Kb): 10, threads: 1, chunk: 128, sort time (ms): 56
+size (Kb): 10, threads: 2, chunk: 128, sort time (ms): 27
+size (Kb): 10, threads: 4, chunk: 128, sort time (ms): 21
+size (Kb): 10, threads: 8, chunk: 128, sort time (ms): 26
+size (Kb): 10, threads: 16, chunk: 128, sort time (ms): 37
+size (Kb): 10, threads: 32, chunk: 128, sort time (ms): 27
+
+---------------------------------
+1Mb, chunk (Kb): 32
+---------------------------------
+size (Kb): 1024, threads: 1, chunk (byte): 32768, sort time (ms): 250
+size (Kb): 1024, threads: 2, chunk (byte): 32768, sort time (ms): 187
+size (Kb): 1024, threads: 4, chunk (byte): 32768, sort time (ms): 45
+size (Kb): 1024, threads: 8, chunk (byte): 32768, sort time (ms): 61
+size (Kb): 1024, threads: 16, chunk (byte): 32768, sort time (ms): 54
+size (Kb): 1024, threads: 32, chunk (byte): 32768, sort time (ms): 54
+
+---------------------------------
+100Mb, chunk (Mb): 4
+---------------------------------
+size (Kb): 102400, threads: 1, chunk (byte): 4194304, sort time (ms): 9182
+size (Kb): 102400, threads: 2, chunk (byte): 4194304, sort time (ms): 5200
+size (Kb): 102400, threads: 4, chunk (byte): 4194304, sort time (ms): 4208
+size (Kb): 102400, threads: 8, chunk (byte): 4194304, sort time (ms): 4388
+size (Kb): 102400, threads: 16, chunk (byte): 4194304, sort time (ms): 4527
+size (Kb): 102400, threads: 32, chunk (byte): 4194304, sort time (ms): 5361
+
+---------------------------------
+1Gb, chunk (Mb): 32/16/8/4
+---------------------------------
+size (Kb): 1048576, threads: 1, chunk (byte): 33554432, sort time (ms): 155936
+size (Kb): 1048576, threads: 2, chunk (byte): 33554432, sort time (ms): 114836
+size (Kb): 1048576, threads: 4, chunk (byte): 33554432, sort time (ms): 114556
+size (Kb): 1048576, threads: 8, chunk (byte): 16777216, sort time (ms): 119416
+size (Kb): 1048576, threads: 16, chunk (byte): 8388608, sort time (ms): 155285
+size (Kb): 1048576, threads: 32, chunk (byte): 4194304, sort time (ms): 214703
